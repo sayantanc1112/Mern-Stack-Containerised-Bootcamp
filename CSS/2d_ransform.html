@@ -1,0 +1,32 @@
+<html>
+   <head>
+      <style>
+         div {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+         }
+         div#skewDiv {
+            /* IE 9 */
+            -ms-transform: skewX(20deg); 
+            
+            /* Safari */
+            -webkit-transform: skewX(20deg);
+            
+            /* Standard syntax */	
+            transform: skewX(20deg);
+         }
+      </style>
+   </head>
+
+   <body>
+      <div>
+         Trishoolin Institute Of Cybersecurity.
+      </div>
+      
+      <div id = "skewDiv">
+         Trishoolin Institute Of Cybersecurity
+      </div>
+   </body>
+</html>
