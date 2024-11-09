@@ -12,7 +12,7 @@ It contains all the CSS code modules.
 # Folder Dcokerize
 It contains all the Containerization of code modules.
 
-##Project 1 : Coffee-Shop
+## <code style="color : name_color">Project 1 : Coffee-Shop </code>
 The docker image can be found in the following link
 Link: https://hub.docker.com/r/sami1112/coffee-shop
 
