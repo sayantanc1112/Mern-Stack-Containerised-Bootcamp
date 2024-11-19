@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Pattern Printing</title>
+</head>
+<body>
+    <h1>Pattern Printing</h1>
+    <button onclick="printPattern(7)">Print Pattern</button>
+    <pre id="pattern"></pre>
+
+    <script>
+      
+        function printPattern(rows) {
+            let output = '';
+            for (let i = 1; i <= rows; i++) {
+                for (let j = 1; j <= i; j++) {
+                    output += '*';
+                }
+                output += '\n';
+            }
+            document.getElementById('pattern').textContent = output;
+        }
+    </script>
+</body>
+</html>
