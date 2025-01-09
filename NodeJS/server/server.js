@@ -15,8 +15,12 @@ const server = http.createServer(function(req,res){
 });
 
 // Listen to the server
-server.listen(9000, () => {
+server.listen(7000, () => {
     console.log("server is up and running");
 });
 
+server.on("request", (req, res) =>{
+    console.log(req);
+});
 //  server url= localhost:9000
+
