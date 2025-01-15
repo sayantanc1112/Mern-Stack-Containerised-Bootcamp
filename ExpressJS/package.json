@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.2.2",
+  "description": "This is a sample server of expressjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expressjs"
+  ],
+  "author": "SayantanChowdhuryTICST",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
