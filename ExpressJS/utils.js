@@ -1,26 +1,29 @@
-const fs = require("fs");
+const fs = require ('fs');
 
 //create folder
-const createFolder = folderName => {
-  //check if folder exists
-  if (!fs.existsSync(folderName)) {
-    //create folder
-    fs.mkdirSync(folderName);
-  }
+const createFolder = (foldername) =>{
+ // check if folder exists
+ if(!fs.existsSync(foldername)){
+    //create the folder
+    fs.mkdirSync(foldername);
+ }
 };
 
-const defaultPosts =
-  '[{"id":"2020", "title":"HTML", "url":"http://someurl.com", "description":"The best"}]';
 
-//create file
-const createFile = file => {
-  //check if file exist
-  if (!fs.existsSync(file)) {
-    fs.writeFileSync(file, defaultPosts);
-  }
+const defaultPosts= '[{"id":"2025", "title":"html", "url":"someurl.com", "description":"The Best"}]';
+
+// craete file
+
+const createFile = (file) =>{
+
+    //check if file exists
+    if(!fs.existsSync(file)){
+        fs.writeFileSync(file, defaultPosts);
+    }
+
 };
 
 module.exports = {
-  createFolder,
-  createFile,
-};
+    createFolder,
+    createFile,
+}
